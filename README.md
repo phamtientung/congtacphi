@@ -44,7 +44,7 @@
     .btn.green { background: green; }
     .btn.orange { background: orange; }
     table { width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 16px; }
-    table, th, td { border: 1px solid #000; text-align: center; }
+    table, th, td { border: 10px solid #000; text-align: center; }
     th, td { padding: 6px; text-align: center; }
     .right { text-align: center; }
     .delBtn { background: red; color: white; border: none; padding: 3px 8px; cursor: pointer; border-radius: 3px; }
