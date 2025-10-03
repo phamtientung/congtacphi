@@ -503,8 +503,8 @@
     let tr = document.createElement("tr");
     tr.innerHTML = `
       <td>${i+1}</td>
-      <td class="editable" data-field="noidung" data-index="${i}" style="text-align:left">${c.noidung}</td>
-      <td class="editable" data-field="sotien" data-index="${i}" style="text-align:right">${c.sotien.toLocaleString()}</td>
+      <td class="editable" data-field="noidung" data-index="${i}" style="text-align:center">${c.noidung}</td>
+      <td class="editable" data-field="sotien" data-index="${i}" style="text-align:center">${c.sotien.toLocaleString()}</td>
       <td><button class="delBtn" onclick="delChi(${i})">Xoá</button></td>
     `;
     tbody.appendChild(tr);
@@ -590,7 +590,7 @@
       let tong=0, stt=0;
       currentUser.chitieu.forEach((c)=>{ tong+=c.sotien; stt++;
         let row = document.createElement("tr");
-        row.innerHTML = `<td>${stt}</td><td style="text-align:left">${c.noidung}</td><td class="right">${c.sotien.toLocaleString()}</td>`;
+        row.innerHTML = `<td>${stt}</td><td style="text-align:center">${c.noidung}</td><td class="right">${c.sotien.toLocaleString()}</td>`;
         tbody.appendChild(row);
       });
 
