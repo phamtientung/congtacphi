@@ -36,7 +36,7 @@
 
     body { font-family: "Times New Roman", serif; margin: 40px; -webkit-print-color-adjust: exact;
     print-color-adjust: exact; }
-    .container { width: 1000px; margin: auto; border: 1px solid #000; padding: 40px; font-size: 20px; }
+    .container { width: 850px; margin: auto; border: 1px solid #000; padding: 40px; font-size: 20px; }
     .hidden { display: none; }
     h2 { text-align: center; margin-bottom: 15px; }
     .btn { margin: 3px; padding: 8px 16px; background: #0066cc; color: #fff; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; }
