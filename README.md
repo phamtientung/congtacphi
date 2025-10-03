@@ -45,7 +45,7 @@
     .btn.orange { background: orange; }
     table { width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 16px; }
     table, th, td { border: 1px solid #000; text-align: center; }
-    th, td { padding: 30px; text-align: center;width: 100px; }
+    th, td { padding: 250px; text-align: center;width: 100px; }
     .right { text-align: center; }
     .delBtn { background: red; color: white; border: none; padding: 3px 8px; cursor: pointer; border-radius: 3px; }
     input, select { padding: 6px; margin: 3px; font-size: 16px; }
