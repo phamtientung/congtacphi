@@ -248,7 +248,7 @@
   if (!diaDiem) return user.tieuvat; // fallback về mức mặc định
 
   let diaDiemLower = diaDiem.toLowerCase();
-  let diaDiemDacBiet = ["ninh hòa", "vạn ninh", "cam lâm", "cam ranh", "yang bay"];
+  let diaDiemDacBiet = ["ninh hòa", "vạn ninh", "cam lâm", "cam ranh", "yang bay", "diên khánh"];
 
   // kiểm tra nếu diaDiem nhập thuộc danh sách đặc biệt
   let isSpecial = diaDiemDacBiet.some(d => diaDiemLower.includes(d));
