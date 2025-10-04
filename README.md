@@ -76,7 +76,7 @@
 #chiTable td:nth-child(1),
 #dsChi th:nth-child(1),
 #dsChi td:nth-child(1) {
-  width: 40px; /* STT nhỏ */
+  width: 50px; /* STT nhỏ */
 }
 
 #chiTable th:nth-child(3),
@@ -90,7 +90,7 @@
 #chiTable td:nth-child(2),
 #dsChi th:nth-child(2),
 #dsChi td:nth-child(2) {
-  width: 400px; /* Nội dung rộng hết phần còn lại */
+  width: 500px; /* Nội dung rộng hết phần còn lại */
   text-align: justify;
   text-align-last:center ; /* căn trái để dễ đọc */
   padding: 8px 10px;
