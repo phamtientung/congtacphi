@@ -90,7 +90,7 @@
 #chiTable td:nth-child(2),
 #dsChi th:nth-child(2),
 #dsChi td:nth-child(2) {
-  width: 300px; /* Nội dung rộng hết phần còn lại */
+  width: 400px; /* Nội dung rộng hết phần còn lại */
   text-align: justify;
   text-align-last:center ; /* căn trái để dễ đọc */
   padding: 8px 10px;
