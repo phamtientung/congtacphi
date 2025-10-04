@@ -45,7 +45,7 @@
     .btn.orange { background: orange; }
     table { width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 16px; }
     table, th, td { border: 1px solid #000; text-align: center; }
-    th, td { padding: 6px; text-align: center;width: 250px;border: 1px solid #000; }
+    th, td { padding: 6px; text-align: center;border: 1px solid #000; }
     .right { text-align: center; }
     .delBtn { background: red; color: white; border: none; padding: 3px 8px; cursor: pointer; border-radius: 3px; }
     input, select { padding: 6px; margin: 3px; font-size: 16px; }
@@ -70,6 +70,33 @@
   font-style: italic;
 
 }
+
+/* bảng nhập chi tiêu */
+#chiTable th:nth-child(1),
+#chiTable td:nth-child(1),
+#dsChi th:nth-child(1),
+#dsChi td:nth-child(1) {
+  width: 40px; /* STT nhỏ */
+}
+
+#chiTable th:nth-child(3),
+#chiTable td:nth-child(3),
+#dsChi th:nth-child(3),
+#dsChi td:nth-child(3) {
+  width: 150px; /* Số tiền vừa */
+}
+
+#chiTable th:nth-child(2),
+#chiTable td:nth-child(2),
+#dsChi th:nth-child(2),
+#dsChi td:nth-child(2) {
+  width: auto; /* Nội dung rộng hết phần còn lại */
+  text-align: justify;
+  text-align-last:center ; /* căn trái để dễ đọc */
+  padding: 8px 10px;
+}
+
+
     .dateRow div { width:30%; text-align:center; }
     .dateRight { text-align:right; }
   </style>
