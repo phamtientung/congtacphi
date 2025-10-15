@@ -1,3 +1,4 @@
+
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
@@ -272,23 +273,35 @@
     let currentEditingUsername = null;
 
     function getCongTacPhi(user, diaDiem) {
-  if (!diaDiem) return user.tieuvat; // fallback về mức mặc định
+  if (!diaDiem) return user.tieuvat; // nếu chưa nhập địa điểm, dùng mức mặc định
 
   let diaDiemLower = diaDiem.toLowerCase();
+  // Danh sách địa điểm đặc biệt có quy định riêng
   let diaDiemDacBiet = ["ninh hòa", "vạn ninh", "cam lâm", "cam ranh", "yang bay", "diên khánh"];
 
-  // kiểm tra nếu diaDiem nhập thuộc danh sách đặc biệt
+  // Kiểm tra địa điểm nhập có nằm trong danh sách đặc biệt không
   let isSpecial = diaDiemDacBiet.some(d => diaDiemLower.includes(d));
 
   if (isSpecial) {
+    // Nếu là Cam Ranh hoặc Vạn Ninh
+    if (diaDiemLower.includes("cam ranh") || diaDiemLower.includes("vạn ninh")) {
+      // Hải & Hoàn: 100.000đ, còn lại: 60.000đ
+      if (user.username === "hai" || user.username === "hoan") {
+        return 100000;
+      } else {
+        return 60000;
+      }
+    }
+
+    // Các địa điểm đặc biệt khác (Ninh Hòa, Cam Lâm, Yang Bay, Diên Khánh)
     if (user.username === "hai" || user.username === "hoan") {
       return 80000;
     } else {
-      return 60000;
+      return 40000;
     }
   }
 
-  // nếu không thuộc địa điểm đặc biệt thì lấy mức tiêu vặt mặc định
+  // Không thuộc địa điểm đặc biệt → dùng mức tiêu vặt mặc định
   return user.tieuvat;
 }
 
