@@ -284,7 +284,7 @@
     if (user.username === "hai" || user.username === "hoan") {
       return 80000;
     } else {
-      return 40000;
+      return 60000;
     }
   }
 
